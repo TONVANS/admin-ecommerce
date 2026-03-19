@@ -1,0 +1,94 @@
+/**
+ * Modified Font Family: Phetsarath (Aliased as Satoshi)
+ * Original Request: Switch to Phetsarath without changing font-family name
+ * * Note: Phetsarath typically supports 400 (Regular) and 700 (Bold).
+ * Other weights have been mapped to the closest available option.
+ */
+
+/* Import Google Font (Phetsarath) */
+@import url('https://fonts.googleapis.com/css2?family=Phetsarath:wght@400;700&display=swap');
+
+/* --- Light (300) -> Maps to Phetsarath Regular (400) --- */
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath'), local('Phetsarath OT');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath'), local('Phetsarath OT');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+/* --- Regular (400) -> Maps to Phetsarath Regular (400) --- */
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath'), local('Phetsarath OT');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath'), local('Phetsarath OT');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+/* --- Medium (500) -> Maps to Phetsarath Regular (400) to avoid fake bolding --- */
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath'), local('Phetsarath OT');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath'), local('Phetsarath OT');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+/* --- Bold (700) -> Maps to Phetsarath Bold (700) --- */
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath Bold'), local('Phetsarath OT Bold'), local('Phetsarath-Bold');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath Bold'), local('Phetsarath OT Bold'), local('Phetsarath-Bold');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+/* --- Black (900) -> Maps to Phetsarath Bold (700) --- */
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath Bold'), local('Phetsarath OT Bold'), local('Phetsarath-Bold');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: local('Phetsarath Bold'), local('Phetsarath OT Bold'), local('Phetsarath-Bold');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
