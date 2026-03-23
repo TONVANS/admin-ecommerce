@@ -9,33 +9,29 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-        port: "",
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
       },
-      {
-        protocol: "https",
-        hostname: "lh3.googleusercontent.com",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "avatars.githubusercontent.com",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "pub-b7fd9c30cdbf439183b75041f5f71b92.r2.dev",
-        port: "",
-      },
-    ],
-    remotePatterns: [
       {
         protocol: 'https',
-        // ຕ້ອງໝັ້ນໃຈວ່າ ENV ນີ້ມີຄ່າໃນ Runtime (Docker)
-        hostname: process.env.NEXT_PUBLIC_API_URL 
-          ? new URL(process.env.NEXT_PUBLIC_API_URL).hostname 
-          : 'jprl-api.edl.com.la', 
+        hostname: 'lh3.googleusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pub-b7fd9c30cdbf439183b75041f5f71b92.r2.dev',
+      },
+      {
+        protocol: 'https',
+        hostname: 'jprl-api.edl.com.la',
+        pathname: '/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'jprl-api.edl.com.la',
         pathname: '/**',
       },
     ],

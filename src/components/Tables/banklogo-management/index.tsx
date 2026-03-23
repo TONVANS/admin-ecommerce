@@ -9,18 +9,19 @@ import { HiOutlineSearch } from 'react-icons/hi';
 import { FaXmark } from 'react-icons/fa6';
 import { useBankLogoStore } from '@/store/bank/banklogoStore';
 import { toast } from 'sonner'; // Import Sonner
+import Image from 'next/image';
 
-const Image = ({ src, alt, width, height, className, onError }: { src: string, alt: string, width: number, height: number, className: string, onError: (e: any) => void }) => (
-    <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        className={className}
-        onError={onError}
-        style={{ width: `${width}px`, height: `${height}px`, objectFit: 'cover' }}
-    />
-);
+// const Image = ({ src, alt, width, height, className, onError }: { src: string, alt: string, width: number, height: number, className: string, onError: (e: any) => void }) => (
+//     <img
+//         src={src}
+//         alt={alt}
+//         width={width}
+//         height={height}
+//         className={className}
+//         onError={onError}
+//         style={{ width: `${width}px`, height: `${height}px`, objectFit: 'cover' }}
+//     />
+// );
 
 // === Custom Input Component ===
 const CustomInput = ({ label, id, ...props }: { label: string, id: string } & React.InputHTMLAttributes<HTMLInputElement>) => (

@@ -1,17 +1,17 @@
 "use client";
 
 // === Mock Image Component ===
-const Image = ({ src, alt, width, height, className, onError }: { src: string, alt: string, width: number, height: number, className: string, onError: (e: any) => void }) => (
-    <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        className={className}
-        onError={onError}
-        style={{ width: `${width}px`, height: `${height}px`, objectFit: 'cover' }}
-    />
-);
+// const Image = ({ src, alt, width, height, className, onError }: { src: string, alt: string, width: number, height: number, className: string, onError: (e: any) => void }) => (
+//     <img
+//         src={src}
+//         alt={alt}
+//         width={width}
+//         height={height}
+//         className={className}
+//         onError={onError}
+//         style={{ width: `${width}px`, height: `${height}px`, objectFit: 'cover' }}
+//     />
+// );
 
 import React, { useEffect, useState } from 'react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -27,6 +27,7 @@ import {
 } from 'lucide-react';
 import { useCategoryStore } from '@/store/category/categoryStore';
 import { toast, Toaster } from 'sonner';
+import Image from 'next/image';
 
 // === Custom Input Component ===
 const CustomInput = ({ label, id, ...props }: { label: string, id: string } & React.InputHTMLAttributes<HTMLInputElement>) => (

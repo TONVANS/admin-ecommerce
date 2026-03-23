@@ -21,20 +21,21 @@ import { useCategoryStore } from '@/store/category/categoryStore';
 import { useProductApproveStore, ProductApprovalPayload } from '@/store/product/productApproveStore';
 import { ProductApprove, ShopPartial } from '@/types/product_approve';
 import { toast } from 'sonner';
+import Image from 'next/image';
 
 // --- Utility Components & Functions ---
 
-const Image = ({ src, alt, width, height, className, onError }: { src: string, alt: string, width: number, height: number, className: string, onError: (e: any) => void }) => (
-    <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        className={className}
-        onError={onError}
-        style={{ width: `${width}px`, height: `${height}px`, objectFit: 'cover', flexShrink: 0 }}
-    />
-);
+// const Image = ({ src, alt, width, height, className, onError }: { src: string, alt: string, width: number, height: number, className: string, onError: (e: any) => void }) => (
+//     <img
+//         src={src}
+//         alt={alt}
+//         width={width}
+//         height={height}
+//         className={className}
+//         onError={onError}
+//         style={{ width: `${width}px`, height: `${height}px`, objectFit: 'cover', flexShrink: 0 }}
+//     />
+// );
 
 const getProductImageUrl = (pimg: string | File | null | undefined): string => {
     if (!pimg || pimg === null) return "https://placehold.co/400x400/e0e0e0/909090?text=No+Image";
